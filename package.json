@@ -1,0 +1,40 @@
+{
+    "name": "@factory-frameworks/forge",
+    "version": "1.0.0",
+    "description": "This Node-RED node package provides custom nodes for writing data to Forge Tags as well as subscribing to Forge Events.",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "bugs": {
+        "email": "info@factoryframeworks.com"
+    },
+    "engines": {
+        "node": ">=16.17.0"
+    },
+    "node-red": {
+        "version": ">=3.0.2",
+        "nodes": {
+            "tag-write": "tag-write/tag-write.js",
+            "tag-change": "event-subscription-nodes/tag-change/tag-change.js",
+            "forge-server": "forge-server/forge-server.js"
+        }
+    },
+    "keywords": [
+        "node-red",
+        "factory-frameworks",
+        "forge"
+    ],
+    "author": "Factory Frameworks",
+    "license": "MIT",
+    "homepage": "https://www.factoryframeworks.com",
+    "dependencies": {
+        "node-fetch": "^3.3.2",
+        "pg": "^8.11.1",
+        "socket.io-client": "^4.7.1",
+        "uuid-validate": "^0.0.3"
+    },
+    "bundleDependencies": [
+        "event-subscription/forge.png",
+        "tag-write/forge.png"
+    ]
+}
